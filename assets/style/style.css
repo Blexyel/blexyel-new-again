@@ -1,0 +1,19 @@
+:root { --crack: 3px; }
+* { background-color: #1e1e2e; font-family: monospace; font-size: large; text-align: center; }
+a { color: #b4befe; }
+p { color: white; }
+span { color: white; }
+footer { position: absolute; bottom: var(--crack); width: 90vw; text-align: center; }
+hr { position:absolute; bottom: 16px;width: 100vw; left: -10px; overflow:hidden; color: #313244;}
+.aaa { color: #74c7ec; }
+.aab { color: #f5c2e7; }
+.aac { color: #cdd6f4; }
+/* 88x31 buttons */
+img[src*="88x31"] {
+  image-rendering: auto;
+  image-rendering: optimizeSpeed;
+  image-rendering: crisp-edges;
+  image-rendering: pixelated;
+  image-rendering: -webkit-optimize-contrast;
+}
+#uwu { display:none; }
