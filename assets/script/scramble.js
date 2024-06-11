@@ -1,7 +1,8 @@
 // ——————————————————————————————————————————————————
 // TextScramble
 // ——————————————————————————————————————————————————
-function startscramble() {
+
+window.onload = function startscramble() {
     class TextScramble {
        constructor(el) {
          this.el = el

@@ -1,8 +1,8 @@
 :root { --crack: 3px; }
 * { background-color: #1e1e2e; font-family: monospace; font-size: large; text-align: center; }
 a { color: #b4befe; }
-p { color: white; }
-span { color: white; }
+p { color: #cdd6f4; }
+span { color: #cdd6f4; }
 footer { position: absolute; bottom: var(--crack); width: 90vw; text-align: center; }
 hr { position:absolute; bottom: 16px;width: 100vw; left: -10px; overflow:hidden; color: #313244;}
 .aaa { color: #74c7ec; }
@@ -16,4 +16,7 @@ img[src*="88x31"] {
   image-rendering: pixelated;
   image-rendering: -webkit-optimize-contrast;
 }
-#uwu { display:none; }
+.scramble {
+  color: #cdd6f4;
+}
+#rick { display:none; }
