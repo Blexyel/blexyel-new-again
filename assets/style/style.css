@@ -20,3 +20,9 @@ img[src*="88x31"] {
   color: #cdd6f4;
 }
 #rick { display:none; }
+
+.rick {
+  cursor: pointer;
+  text-decoration-line: underline;
+  text-decoration-color: #b4befe;
+}
