@@ -38,9 +38,3 @@ img[src*="88x31"] {
   color: #1e1e2e;
   user-select: none;
 }
-
-body.transform {
-  transform:rotate(180deg);
-  -ms-transform:rotate(180deg);
-  -webkit-transform:rotate(180deg);
-}
