@@ -23,8 +23,22 @@
             }            
         }
     </script>
+    <script>
+        function flip() {    
+            Array.prototype.slice.call(document.querySelectorAll('*')).map(function(tag){tag.style['transform'] = 'rotate(' + 180 +'deg)';});
+            var fieldNameElement = document.getElementById('lbb');
+            fieldNameElement.onclick = function () { unflip() };
+            console.log('replaced')
+        }
+        function unflip() {    
+            Array.prototype.slice.call(document.querySelectorAll('*')).map(function(tag){tag.style['transform'] = 'rotate(' + 0 +'deg)';});
+            var fieldNameElement = document.getElementById('lbb');
+            fieldNameElement.onclick = function () { flip() };
+        }
+    </script>
 </head>   
 <div>
+<body>
 <span>hello there (obiwan kenobi??)</span><br>
     <span>I am blexyel, welcome to my site (definitely not stolen and modified from <a href="https://transgender.cat">there</a>)</span><br><br>
     <span>be gay, do crime</span><br>
@@ -55,8 +69,10 @@
     </a>
     <a class="la" target="_blank" href="https://star.pingusmc.org" title="star (go check out their art!!)">
         <img width="88" height="31" src="/assets/stuff/star.gif" alt="starlightsky">
-      </a>
+    </a>
     <footer>
-        <video id="rick" src="/assets/stuff/rick.mp4" muted preload="auto">
+        <video id="rick" src="/assets/stuff/rick.mp4" muted preload="auto"></video>
     </footer>
 </div>
+<a class="lb" id="lbb" onclick="flip()">This will flip the page upside down</a>
+</body>

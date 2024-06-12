@@ -31,3 +31,16 @@ img[src*="88x31"] {
   text-decoration: none;
   text-decoration-color: #1e1e2e;
 }
+
+.lb {
+  cursor: progress;
+  width: 100%;
+  color: #1e1e2e;
+  user-select: none;
+}
+
+body.transform {
+  transform:rotate(180deg);
+  -ms-transform:rotate(180deg);
+  -webkit-transform:rotate(180deg);
+}
