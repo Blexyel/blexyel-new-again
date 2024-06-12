@@ -3,38 +3,8 @@
     <title>idk</title>
     <link rel="stylesheet" href="/assets/style/style.css">
     <script src="/assets/script/scramble.js"></script>
-    <script>
-        console.log("crack");
-        let sex = false;
-        function rickie() {
-            console.log("rickie");
-            rick.style = "display: revert";
-            rick.play();
-            rick.requestFullscreen();
-            rick.muted = false;
-            sex = true;
-        }
-        document.onfullscreenchange = function(a) {
-            if (!document.fullscreenElement) {
-                console.log("WAAAAAAAAAHHHHHHH")
-                rick.pause();
-                rick.currentTime = 0
-                rick.style = "";
-            }            
-        }
-    </script>
-    <script>
-        function flip() {    
-            Array.prototype.slice.call(document.querySelectorAll('body')).map(function(tag){tag.style['transform'] = 'rotate(' + 180 +'deg)';});
-            var fieldNameElement = document.getElementById('lbb');
-            fieldNameElement.onclick = function () { unflip() };
-        }
-        function unflip() {    
-            Array.prototype.slice.call(document.querySelectorAll('body')).map(function(tag){tag.style['transform'] = 'rotate(' + 0 +'deg)';});
-            var fieldNameElement = document.getElementById('lbb');
-            fieldNameElement.onclick = function () { flip() };
-        }
-    </script>
+    <script src="/assets/script/rickroll.js"></script>
+    <script src="/assets/script/flipit.js"></script>
 </head>   
 <body>
 <div>
