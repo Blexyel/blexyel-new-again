@@ -26,3 +26,8 @@ img[src*="88x31"] {
   text-decoration-line: underline;
   text-decoration-color: #b4befe;
 }
+
+.la {
+  text-decoration: none;
+  text-decoration-color: #1e1e2e;
+}
