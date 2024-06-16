@@ -18,6 +18,8 @@ img[src*="88x31"] {
 }
 .scramble {
   color: #cdd6f4;
+  cursor: progress;
+  user-select: none;
 }
 #rick { display:none; }
 
@@ -32,9 +34,8 @@ img[src*="88x31"] {
   text-decoration-color: #1e1e2e;
 }
 
-.lb {
-  cursor: progress;
-  width: 100%;
-  color: #1e1e2e;
-  user-select: none;
+.status {
+  width: 512px;
+  height: 128px;
+  border-color: transparent;
 }
