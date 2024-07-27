@@ -36,6 +36,6 @@ img[src*="88x31"] {
 
 .status {
   width: 512px;
-  height: 128px;
+  height: 256px;
   border-color: transparent;
 }

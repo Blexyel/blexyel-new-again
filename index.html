@@ -5,6 +5,7 @@
     <script src="/assets/script/scramble.js"></script>
     <script src="/assets/script/rickroll.js"></script>
     <script src="/assets/script/flipit.js"></script>
+    <script src="/assets/script/status.js"></script>
 </head>   
 <body>
 <div>
@@ -40,9 +41,18 @@
         <img width="88" height="31" src="/assets/stuff/star.gif" alt="starlightsky">
     </a>
     <br>
+    <span>--- AbuseIPDB ---</span>
+    <br>
+    <a target="_blank" href="https://www.abuseipdb.com/user/97121" title="AbuseIPDB is an IP address blacklist for webmasters and sysadmins to report IP addresses engaging in abusive behavior on their networks">
+        <img src="https://www.abuseipdb.com/contributor/97121.svg" alt="AbuseIPDB Contributor Badge" style="width: 250px; background: #b4befe; border-radius: 20px; border-color: #1e1e2e;">
+    </a>
+    <br>
     <span>--- Status ---</span>
     <br>
-    <iframe src="https://dev.rooot.gay/backend/status.html?embed" class="status"></iframe>
+    <!--https://dev.rooot.gay/backend/status.html?embed&tags=pingusmc,pingusmc-2&columns=7-->
+    <div id="iframe-container">
+        <iframe src="https://dev.rooot.gay/backend/status.html?embed&tags=pingusmc,pingusmc-2&columns=7" class="status" id="status" onload=statusreload() ></iframe>
+    </div>
     <footer>
         <video id="rick" src="/assets/stuff/rick.mp4" muted preload="auto"></video>
     </footer>
