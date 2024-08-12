@@ -1,0 +1,3 @@
+[submodule "custom-error-pages"]
+	path = custom-error-pages
+	url = https://github.com/PassiHD2004/custom-error-pages.git
