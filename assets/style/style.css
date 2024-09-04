@@ -1,13 +1,61 @@
-:root { --crack: 3px; }
-* { background-color: #1e1e2e; font-family: monospace; font-size: large; text-align: center; }
-a { color: #b4befe; }
-p { color: #cdd6f4; }
-span { color: #cdd6f4; }
-footer { position: absolute; bottom: var(--crack); width: 90vw; text-align: center; }
-hr { position:absolute; bottom: 16px;width: 100vw; left: -10px; overflow:hidden; color: #313244;}
-.aaa { color: #74c7ec; }
-.aab { color: #f5c2e7; }
-.aac { color: #cdd6f4; }
+:root {
+  --crack: 3px;
+}
+
+@font-face {
+  font-family: 'DepartureMono';
+  src: url('/assets/font/DepartureMono-Regular.otf');
+}
+
+* {
+  background-color: #1e1e2e;
+  font-family: DepartureMono;
+  font-size: large;
+  text-align: center;
+  -webkit-font-smoothing: none;
+  -webkit-subpixel-antialiasing: none;
+}
+
+a {
+  color: #b4befe;
+}
+
+p {
+  color: #cdd6f4;
+}
+
+span {
+  color: #cdd6f4;
+}
+
+footer {
+  position: absolute;
+  bottom: var(--crack);
+  width: 90vw;
+  text-align: center;
+}
+
+hr {
+  position: absolute;
+  bottom: 16px;
+  width: 100vw;
+  left: -10px;
+  overflow: hidden;
+  color: #313244;
+}
+
+.aaa {
+  color: #74c7ec;
+}
+
+.aab {
+  color: #f5c2e7;
+}
+
+.aac {
+  color: #cdd6f4;
+}
+
 /* 88x31 buttons */
 img[src*="88x31"] {
   image-rendering: auto;
@@ -16,12 +64,16 @@ img[src*="88x31"] {
   image-rendering: pixelated;
   image-rendering: -webkit-optimize-contrast;
 }
+
 .scramble {
   color: #cdd6f4;
   cursor: progress;
   user-select: none;
 }
-#rick { display:none; }
+
+#rick {
+  display: none;
+}
 
 .rick {
   cursor: pointer;
