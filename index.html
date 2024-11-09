@@ -5,9 +5,11 @@
     <script src="/assets/script/scramble.js"></script>
     <script src="/assets/script/rickroll.js"></script>
     <script src="/assets/script/flipit.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </head>   
 <body>
 <div>
+<canvas id="confetti-canvas"></canvas>
 <span>hello there (obiwan kenobi??)</span><br>
     <span>I am blexyel, welcome to my site (definitely not stolen and modified from <a href="https://transgender.cat">there</a>)</span><br><br>
     <span>be gay, do crime</span><br>
@@ -57,3 +59,51 @@
     </footer>
 </div>
 </body>
+<script>
+    document.addEventListener("DOMContentLoaded", () => {
+        const today = new Date();
+        const targetDate = new Date(today.getFullYear(), 10, 12);
+
+        const interval = setInterval(() => {
+            const now = new Date();
+            const remainingTime = targetDate - now;
+
+            if (remainingTime <= 0) {
+                console.log('The satanic ritual has commenced')
+                targetDate.setFullYear(targetDate.getFullYear() + 1);
+            } else {
+                const days = Math.floor(remainingTime / (1000 * 60 * 60 * 24));
+                const hours = Math.floor((remainingTime % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+                const minutes = Math.floor((remainingTime % (1000 * 60 * 60)) / (1000 * 60));
+                const seconds = Math.floor((remainingTime % (1000 * 60)) / 1000);
+
+                console.log(
+                    `%c${days}d %c${hours}h %c${minutes}m %c${seconds}s`,
+                    "color: #94e2d5",
+                    "color: #fab387",
+                    "color: #cba6f7",
+                    "color: #f5c2e7"
+                );
+
+            }
+
+            if (remainingTime <= 0) {
+                setTimeout(() => {
+                    const confettiCanvas = document.getElementById('confetti-canvas');
+                    const myConfetti = confetti.create(confettiCanvas, { resize: true });
+
+                    myConfetti({
+                        particleCount: 5000,
+                        startVelocity: 140,
+                        spread: 180,
+                        angle: 90,
+                        ticks: 2000,
+                        origin: { x: 0.5, y: 1.6 },
+                        colors: ['#ffb83d', '#ffdb58', '#c2eaff', '#94e2d1', '#b28dff', '#ff8a65', '#ffc3a0']
+                    });
+                }, 200);
+                clearInterval(interval);
+            }
+        }, 1000);
+    });    
+</script>

@@ -91,3 +91,14 @@ img[src*="88x31"] {
   height: 256px;
   border-color: transparent;
 }
+
+#confetti-canvas {
+  background: transparent;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  pointer-events: none; /* Allows clicks to pass through */
+  z-index: 1000; /* Ensures it overlays other content */
+}
