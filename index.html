@@ -85,24 +85,23 @@
                     "color: #f5c2e7"
                 );
 
-            }
-
-            if (remainingTime <= 0) {
-                setTimeout(() => {
-                    const confettiCanvas = document.getElementById('confetti-canvas');
-                    const myConfetti = confetti.create(confettiCanvas, { resize: true });
-
-                    myConfetti({
-                        particleCount: 5000,
-                        startVelocity: 140,
-                        spread: 180,
-                        angle: 90,
-                        ticks: 2000,
-                        origin: { x: 0.5, y: 1.6 },
-                        colors: ['#ffb83d', '#ffdb58', '#c2eaff', '#94e2d1', '#b28dff', '#ff8a65', '#ffc3a0']
-                    });
-                }, 200);
-                clearInterval(interval);
+                if (remainingTime <= 0) {
+                    setTimeout(() => {
+                        const confettiCanvas = document.getElementById('confetti-canvas');
+                        const myConfetti = confetti.create(confettiCanvas, { resize: true });
+    
+                        myConfetti({
+                            particleCount: 5000,
+                            startVelocity: 140,
+                            spread: 180,
+                            angle: 90,
+                            ticks: 2000,
+                            origin: { x: 0.5, y: 1.6 },
+                            colors: ['#ffb83d', '#ffdb58', '#c2eaff', '#94e2d1', '#b28dff', '#ff8a65', '#ffc3a0']
+                        });
+                    }, 200);
+                    clearInterval(interval);
+                }
             }
         }, 1000);
     });    
