@@ -87,7 +87,7 @@ img[src*="88x31"] {
 }
 
 .status {
-  width: 512px;
+  width: 400px;
   height: 256px;
   border-color: transparent;
 }
@@ -99,6 +99,8 @@ img[src*="88x31"] {
   left: 0;
   width: 100vw;
   height: 100vh;
-  pointer-events: none; /* Allows clicks to pass through */
-  z-index: 1000; /* Ensures it overlays other content */
+  pointer-events: none;
+  /* Allows clicks to pass through */
+  z-index: 1000;
+  /* Ensures it overlays other content */
 }
