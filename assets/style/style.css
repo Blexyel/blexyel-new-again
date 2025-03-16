@@ -8,41 +8,21 @@
 }
 
 * {
-  background-color: #1e1e2e;
+  overflow-x: hidden;
+  border: none;
+  box-sizing: content-box;
   font-family: DepartureMono;
-  font-size: large;
+  background-color: #1e1e2e;
+  color: #cdd6f4;
   text-align: center;
-  -webkit-font-smoothing: none;
-  -webkit-subpixel-antialiasing: none;
-  overflow: hidden;
 }
 
 a {
   color: #b4befe;
 }
 
-p {
+p, span {
   color: #cdd6f4;
-}
-
-span {
-  color: #cdd6f4;
-}
-
-footer {
-  position: absolute;
-  bottom: var(--crack);
-  width: 90vw;
-  text-align: center;
-}
-
-hr {
-  position: absolute;
-  bottom: 16px;
-  width: 100vw;
-  left: -10px;
-  overflow: hidden;
-  color: #313244;
 }
 
 .aaa {
@@ -58,12 +38,22 @@ hr {
 }
 
 /* 88x31 buttons */
-img[src*="88x31"] {
+img[width="88"] {
+  min-width: unset !important;
+  width: 88px !important;
   image-rendering: auto;
   image-rendering: optimizeSpeed;
   image-rendering: crisp-edges;
   image-rendering: pixelated;
   image-rendering: -webkit-optimize-contrast;
+}
+
+.abuseipdb {
+  min-width: unset !important;
+  width: 250px !important; 
+  background: #b4befe; 
+  border-radius: 20px; 
+  border-color: #1e1e2e;
 }
 
 .scramble {
@@ -87,21 +77,24 @@ img[src*="88x31"] {
   text-decoration-color: #1e1e2e;
 }
 
-.status {
-  width: 400px;
-  height: 256px;
-  border-color: transparent;
-}
-
 #confetti-canvas {
   background: transparent;
   position: absolute;
   top: 0;
   left: 0;
+  min-width: unset !important;
   width: 100vw;
   height: 100vh;
   pointer-events: none;
-  /* Allows clicks to pass through */
   z-index: 1000;
-  /* Ensures it overlays other content */
+}
+
+.status {
+  max-width: 750px !important;
+  margin: auto;
+}
+
+#status_iframe {
+  padding-left: 40px;
+  width: 100%;
 }
