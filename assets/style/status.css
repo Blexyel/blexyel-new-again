@@ -1,7 +1,12 @@
-/*.last-col {
-    width: 200px !important;
+/*
+.last-col {
+    width: 800px !important;
 }
 
 .service-col {
-    width: 200px;
+    width: 800px;
 }*/
+
+* {
+    text-shadow: none !important;
+}
