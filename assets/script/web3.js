@@ -6,7 +6,7 @@ function web3() {
     document.getElementById("abuse").remove();
     document.getElementById("abuse").remove();
     document.getElementById("status").remove();
-    document.getElementById("iframe-container").remove();
+    document.getElementById("status_iframe").remove();
     
     for (var m = 0; m < 100; m++) {
         try {
