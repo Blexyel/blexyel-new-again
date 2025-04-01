@@ -70,6 +70,7 @@
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
+        status_iframe.src = "https://status.pingusmc.org/backend/status.html?embed&tags=pingusmc,pingusmc-2&cols=4&autorl=3&custom_css_url=" + window.location.protocol + "//" + window.location.host + "/assets/style/status.css";
         const today = new Date();
         const targetDate = new Date(today.getFullYear(), 10, 12);
         // April fools bitches
@@ -77,8 +78,8 @@
         if (d < 0.5 && today.getMonth() == 3 && today.getDate() == 1) {
             console.log("April fools bitches");
             web3();
-        }
-        status_iframe.src = "https://status.pingusmc.org/backend/status.html?embed&tags=pingusmc,pingusmc-2&cols=4&autorl=3&custom_css_url=" + window.location.protocol + "//" + window.location.host + "/assets/style/status.css";
+        };
+
 
         const interval = setInterval(() => {
             const now = new Date();
