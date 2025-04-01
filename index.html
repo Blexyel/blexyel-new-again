@@ -6,6 +6,7 @@
     <script src="/assets/script/scramble.js"></script>
     <script src="/assets/script/rickroll.js"></script>
     <script src="/assets/script/flipit.js"></script>
+    <script src="/assets/script/web3.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.9.3/dist/confetti.browser.min.js"></script>
 </head>
 
@@ -34,30 +35,30 @@
         <a href="https://twitter.com/Blexyel">Twitter</a><br>
         <a href="https://ko-fi.com/blexyel">Kofi</a><br>
         <a href="https://bsky.app/profile/blexyel.wtf">Bsky</a><br>
-        <br><br>
-        <span>--- BUTTONS ---</span><br>
-        <a class="la" href="https://rooot.gay" title="rooot">
+        <br id="break"><br id="break">
+        <span id="buttons">--- BUTTONS ---</span><br>
+        <a class="la" id="la" href="https://rooot.gay" title="rooot">
             <img width="88" height="31" src="https://rooot.gay/assets/img/88x31/rooot.gif"
                 alt="image with 2 white-pink kitten paws, one holding a trans flag. below is a trans-colored text: rooot.gay~">
         </a>
-        <a class="la" target="_blank" href="https://catppuccin.com/" title="catppuccin mocha best color palette <3">
+        <a class="la" id="la" target="_blank" href="https://catppuccin.com/" title="catppuccin mocha best color palette <3">
             <img width="88" height="31" src="/assets/stuff/catppuccin.gif"
                 alt="rainbow with a dark cat in the foreground">
         </a>
-        <a class="la" target="_blank" href="https://star.pingusmc.org" title="star (go check out their art!!)">
+        <a class="la" id="la" target="_blank" href="https://star.pingusmc.org" title="star (go check out their art!!)">
             <img width="88" height="31" src="/assets/stuff/star.gif" alt="starlightsky">
         </a>
-        <br>
-        <span>--- AbuseIPDB ---</span>
-        <br>
-        <a target="_blank" href="https://www.abuseipdb.com/user/97121"
+        <br id="break">
+        <span id="abuse">--- AbuseIPDB ---</span>
+        <br id="break">
+        <a id="abuse" target="_blank" href="https://www.abuseipdb.com/user/97121"
             title="AbuseIPDB is an IP address blacklist for webmasters and sysadmins to report IP addresses engaging in abusive behavior on their networks">
             <img src="https://www.abuseipdb.com/contributor/97121.svg" alt="AbuseIPDB Contributor Badge"
                 style="width: 250px; background: #b4befe; border-radius: 20px; border-color: #1e1e2e;">
         </a>
-        <br>
-        <span>--- Status ---</span>
-        <br>
+        <br id="break">
+        <span id="status">--- Status ---</span>
+        <br id="break">
         <!--https://dev.rooot.gay/backend/status.html?embed&tags=pingusmc,pingusmc-2&columns=7-->
         <div id="iframe-container">
             <iframe id="status_iframe" src="" class="status"></iframe>
@@ -69,7 +70,13 @@
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        status_iframe.src = "https://status.pingusmc.org/backend/status.html?embed&tags=pingusmc,pingusmc-2&cols=5&autorl=3&custom_css_url=" + window.location.protocol + "//" + window.location.host + "/assets/style/status.css";
+        // April fools bitches
+        var d = Math.random();
+        if (d < 0.1) {
+            console.log("April fools bitches");
+            web3();
+        }
+        status_iframe.src = "https://status.pingusmc.org/backend/status.html?embed&tags=pingusmc,pingusmc-2&cols=4&autorl=3&custom_css_url=" + window.location.protocol + "//" + window.location.host + "/assets/style/status.css";
 
         const today = new Date();
         const targetDate = new Date(today.getFullYear(), 10, 12);

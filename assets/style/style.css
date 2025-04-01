@@ -45,6 +45,22 @@ hr {
   color: #313244;
 }
 
+#iframe-container {
+  display: grid;
+  place-items: center;
+  width: 100%;
+  margin: 0 auto;
+}
+
+.status {
+  border-color: transparent;
+  width: 80%;
+  margin-left: 10%;
+  max-width: 800px;
+  display: block;
+  /* Ensure it is treated as a block element */
+}
+
 .aaa {
   color: #74c7ec;
 }
@@ -85,12 +101,6 @@ img[src*="88x31"] {
 .la {
   text-decoration: none;
   text-decoration-color: #1e1e2e;
-}
-
-.status {
-  width: 400px;
-  height: 256px;
-  border-color: transparent;
 }
 
 #confetti-canvas {
