@@ -12,6 +12,11 @@
 </head>
 
 <body>
+    <div class="bg-dark"></div>
+    <svg viewBox="0 0 600 600" preserveAspectRatio="none" class="background-shape">
+        <path fill="#1e1e2e" d=" M 0 600 C 107 291, 508 309, 600 0 C 864 80, 1152 40, 600 16 L 600 600 L 0 600 Z" />
+    </svg>
+
     <div>
         <canvas id="confetti-canvas"></canvas>
         <span>hello there (obiwan kenobi??)</span><br>
@@ -22,6 +27,8 @@
         <div onload="startscramble()" class="scramble" onclick="flip()" id="flip"></div>
         <br>
         <span>--- TESTIMONIALS ---</span><br>
+        <span>"Its better to cum in the sink than to sink in the cum"</span>
+        <span class="aad"> ~ Astral</span><br>
         <span>"single cell organism"</span>
         <span class="aab"> ~ rooot</span><br>
         <span>"skibidi :3"</span>
@@ -72,7 +79,7 @@
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        status_iframe.src = "https://status.pingusmc.org/backend/status.html?embed&tags=pingusmc,pingusmc-2,pingussy,smol&cols=4&autorl=3&custom_css_url=" + window.location.protocol + "//" + window.location.host + "/assets/style/status.css";
+        status_iframe.src = "https://status.pingusmc.org/backend/status.html?embed&tags=pingussy,smol&cols=4&autorl=3&custom_css_url=" + window.location.protocol + "//" + window.location.host + "/assets/style/status.css";
         const today = new Date();
         const targetDate = new Date(today.getFullYear(), 10, 12);
         // April fools bitches
