@@ -79,7 +79,7 @@
 </body>
 <script>
     document.addEventListener("DOMContentLoaded", () => {
-        status_iframe.src = "https://status.pingusmc.org/backend/status.html?embed&tags=pingussy,smol&cols=4&autorl=3&custom_css_url=" + window.location.protocol + "//" + window.location.host + "/assets/style/status.css";
+        status_iframe.src = "https://status.pingusmc.org/backend/status.html?embed&tags=pingussy,smol&cols=5&autorl=60&trim_paran&custom_css_url=" + window.location.protocol + "//" + window.location.host + "/assets/style/status.css";
         const today = new Date();
         const targetDate = new Date(today.getFullYear(), 10, 12);
         // April fools bitches
@@ -130,5 +130,5 @@
                 }
             }
         }, 1000);
-    });    
+    });
 </script>
